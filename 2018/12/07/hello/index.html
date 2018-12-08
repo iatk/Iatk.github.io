@@ -150,13 +150,13 @@ sudo apt-get install apache2 -y
 
     <div class="post-header">
         <h1 class="title">
-            <a href="/2018/12/04/hello/">
+            <a href="/2018/12/07/hello/">
                 作业4
             </a>
         </h1>
         <div class="post-info">
             
-                <span class="date">2018-12-04</span>
+                <span class="date">2018-12-07</span>
             
             
             
@@ -182,7 +182,7 @@ sudo apt-get install apache2 -y
 <p><strong>4.建立apache2与mysql的连接</strong><br>在终端输入,：<br><code>sudo apt-get install phpmyadmin -y</code><br>下载组件</p>
 <p>接着进行软件包设置：在弹出的界面选择apache2，确认；点yes之后设置密码，再点ok确认密码。</p>
 <p>然后建立连接重启mysql与apach2，输入：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">sudo ln -s /usr/share/phpmyadmin /var/www/html/phpmyadmin</span><br><span class="line">sudo service mysql restart</span><br><span class="line">sudo systemctl restart apache2.service</span><br></pre></td></tr></table></figure></p>
-<p>接着确认服务状态，输入：<br><code>sudo /etc/init.d/apach2 status</code><br>如果出现绿色的 active（running）字样则说明服务正常</p>
+<p>init.d/apach2 status<code>接着确认服务状态，输入：</code>sudo /etc/<br>如果出现绿色的 active（running）字样则说明服务正常</p>
 <p><strong>5. 下载和解压wordpress</strong><br>下载： <code>wget https://cn.wordpress.org/wordpress-4.7.4-zh_CN.zip</code><br>解压： <code>sudo unzip wordpress-4.7.4-zh_CN.zip</code></p>
 <p><strong>6. 配置wordpress环境</strong><br>将wordpress的目录移动到默认路径并授权<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">sudo mv wordpress/* /var/www/html/</span><br><span class="line">sudo chmod -R 777 /var/www/html/</span><br><span class="line">sudo mv /var/www/html/index.html /var/www/html/index~.html</span><br><span class="line">sudo /etc/init.d/apache2 restart</span><br></pre></td></tr></table></figure></p>
 <p><strong>配置完成</strong></p>
@@ -223,11 +223,11 @@ sudo apt-get install apache2 -y
         <ul>
             
             <li>
-                <a class="footer-post" href="/2018/12/04/作业/">作业3</a>
+                <a class="footer-post" href="/2018/12/07/hello/">作业4</a>
             </li>
             
             <li>
-                <a class="footer-post" href="/2018/12/04/hello/">作业4</a>
+                <a class="footer-post" href="/2018/12/04/作业/">作业3</a>
             </li>
             
         </ul>
