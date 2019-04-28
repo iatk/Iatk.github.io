@@ -10,6 +10,8 @@
 
     <!--Description-->
     
+        <meta name="description" content="1、IIS6.0解析漏洞①目录分析形式：www.xxx.com/xx.asp/xx.jpg原理：服务器默认会把xx.asp目录下的文件都会解析成asp文件。②文件解析形式：www.xxx.com/xx.asp;xx.jpg原理：服务器默认不解析;号后面的内容，因此xx.asp;xx.jpg便被解析成">
+    
 
     <!--Author-->
     
@@ -18,7 +20,7 @@
 
     <!--Open Graph Title-->
     
-        <meta property="og:title" content="iatk&#39;s blog">
+        <meta property="og:title" content="解析漏洞">
     
 
     <!--Open Graph Description-->
@@ -29,7 +31,7 @@
 
     <!--Type page-->
     
-        <meta property="og:type" content="website">
+        <meta property="og:type" content="article">
     
 
     <!--Page Cover-->
@@ -40,7 +42,7 @@
 
     <!-- Title -->
     
-    <title>Archives: 2018/12 - iatk&#39;s blog</title>
+    <title>解析漏洞 - iatk&#39;s blog</title>
 
     <!-- Bootstrap Core CSS -->
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
@@ -127,9 +129,7 @@
 <div class="container">
 
     <!-- Main Content -->
-    
-
-<div class="row">
+    <div class="row">
     <div class="col-sm-12">
 
         <!--Title and Logo-->
@@ -137,97 +137,56 @@
     <div class="logo">
         <a href="/"><i class="logo-icon fa fa-cube" aria-hidden="true"></i></a>
         
-            <h1 id="main-title" class="title">2018/12</h1>
-        
     </div>
 </header>
 
-        <section class="main archive-container">
+        <section class="main">
             
-                <div class="archive-post">
-    <a href="/2019/03/30/3/">
-        <span class="archive-date">
-            Mar 2019
-        </span>
-        MySQL中的substr函数与PHP中的substr函数
-    </a>
+<div class="post">
+
+    <div class="post-header">
+        <h1 class="title">
+            <a href="/2019/04/27/解析漏洞/">
+                解析漏洞
+            </a>
+        </h1>
+        <div class="post-info">
+            
+                <span class="date">2019-04-27</span>
+            
+            
+            
+        </div>
+    </div>
+
+    <div class="content">
+
+        <!-- Gallery -->
+        
+
+        <!-- Post Content -->
+        <p>1、IIS6.0解析漏洞<br>①目录分析<br>形式：<a href="http://www.xxx.com/xx.asp/xx.jpg" target="_blank" rel="noopener">www.xxx.com/xx.asp/xx.jpg</a><br>原理：服务器默认会把xx.asp目录下的文件都会解析成asp文件。<br>②文件解析<br>形式：<a href="http://www.xxx.com/xx.asp;xx.jpg" target="_blank" rel="noopener">www.xxx.com/xx.asp;xx.jpg</a><br>原理：服务器默认不解析;号后面的内容，因此xx.asp;xx.jpg便被解析成asp文件。</p>
+<p>2、Apache 1.x 2.x解析漏洞<br>漏洞原理：<br>Apache解析文件的规则是从右到左开始判断解析，如果后缀名为不可识别文件解析，就再往左判断，比如test.php.a.b的”.a”和”.b”这两种后缀是Apache不可识别解析，Apache就会把test.php.a.b解析成test.php。<br>漏洞形式：<a href="http://www.test.com/test.php.a" target="_blank" rel="noopener">www.test.com/test.php.a</a><br>其余配置问题导致漏洞：<br>(1)如果在Apache的conf里有这样一行配置 AddHandler php5-script.php 这时只要文件名里包含.php，即使文件名是 test.php.jpg 也会以php来执行。<br>(2)如果在Apache的conf里有这样一行配置 AddType Application/x-httpd-php.jpg 即使扩展名是jpg，一样能以php方式执行。</p>
+<p>3、Nginx解析漏洞<br>漏洞原理：<br>Nginx拿到文件路径（更专业的说法是URI）/test.jpg/test.php后，看到后缀是php，便认为该文件是php文件，转交给php处理。php看到/test.jpg/test.php不存在，便删去最后的test.php，又看到/test.jpg存在，便把/test.jpg当成要执行的文件了，又因为后缀为.jpg，php认为这不是php文件，于是返回“Access.denued”。<br>这其中涉及到php的一个选项：cgi.fix.pathinfo，该值默认为1，表示开启。开启这一选项PHP可以对文件路径进行“修理”。举个例子，当php遇到文件路径“/1.jpg/2.txt/3.php”是，若“/1.jpg/2.txt/3.php”不存在，则会去掉最后的“/3.php”，然后判断“/1.jpg/2.txt”是否存在，若存在，则把“/1.jpg/.2txt”<br>当作文件“/1.jpg/2.txt/3.php”，若“/1.jpg/.2txt”仍不存在，则继续去掉“/.2txt”，以此类推。<br>漏洞形式：<a href="http://www.xxx.com/UploadFiles/image/1.jpg/1.php" target="_blank" rel="noopener">www.xxx.com/UploadFiles/image/1.jpg/1.php</a><br>另外两种解析漏洞：<br><a href="http://www.xxx.com/UploadFiles/image/1.jpg%00.php" target="_blank" rel="noopener">www.xxx.com/UploadFiles/image/1.jpg%00.php</a><br><a href="http://www.xxx.com/UploadFiles/image/1.jpg/%20\0.php" target="_blank" rel="noopener">www.xxx.com/UploadFiles/image/1.jpg/%20\0.php</a></p>
+<p>4、IIS7.5解析漏洞<br>IIIS7.5的漏洞与Nginx的类似，都是由于php配置文件中，开启了cgi.fix.pathinfo，而这并不是Nginx或者IIS7.5本身的漏洞。<br>漏洞形式：<a href="http://www.xxx.com/UploadFiles/image/1.jpg/1.php" target="_blank" rel="noopener">www.xxx.com/UploadFiles/image/1.jpg/1.php</a></p>
+<p>5、Windows系统解析漏洞<br>旧版Windows Server中存在空格和dot漏洞，类似于”a.php.”和”a.php[空格]”这样的文件名存储后会被Windows去掉点和空格，从而使得加上这两个东西可以突破过滤，成功上传，并且被当作php代码执行。<br>例如：<br>test.asp.<br>test.asp(空格)</p>
+<p>test.php:1.jpg<br>test.php::$DATA</p>
+
+    </div>
+
+    
+
+    
+
+    <!-- Comments -->
+    
+
 </div>
-            
-                <div class="archive-post">
-    <a href="/2019/04/10/4/">
-        <span class="archive-date">
-            Apr 2019
-        </span>
-        apt-get remove与apt-get purge
-    </a>
-</div>
-            
-                <div class="archive-post">
-    <a href="/2019/04/10/CMD常用命令/">
-        <span class="archive-date">
-            Apr 2019
-        </span>
-        CMD常用命令
-    </a>
-</div>
-            
-                <div class="archive-post">
-    <a href="/2019/04/13/python2与python3在Windows中共存/">
-        <span class="archive-date">
-            Apr 2019
-        </span>
-        python2与python3在Windows中共存
-    </a>
-</div>
-            
-                <div class="archive-post">
-    <a href="/2018/12/04/作业三/">
-        <span class="archive-date">
-            Dec 2018
-        </span>
-        Httpd编译安装
-    </a>
-</div>
-            
-                <div class="archive-post">
-    <a href="/2018/12/07/作业四/">
-        <span class="archive-date">
-            Dec 2018
-        </span>
-        在ubuntu上搭建wordpress
-    </a>
-</div>
-            
-                <div class="archive-post">
-    <a href="/2019/04/27/图片马制作/">
-        <span class="archive-date">
-            Apr 2019
-        </span>
-        图片马制作的几种方式
-    </a>
-</div>
-            
-                <div class="archive-post">
-    <a href="/2019/04/27/解析漏洞/">
-        <span class="archive-date">
-            Apr 2019
-        </span>
-        解析漏洞
-    </a>
-</div>
-            
-                <div class="archive-post">
-    <a href="/2019/04/12/SQL注入/">
-        <span class="archive-date">
-            Apr 2019
-        </span>
-        SQL注入
-    </a>
-</div>
-            
         </section>
+
     </div>
 </div>
+
 
 </div>
 

@@ -10,6 +10,9 @@
 
     <!--Description-->
     
+        <meta name="description" content="前言当电脑同时有python2和python3时，经常会出现各种令人抓狂的问题，好在终于把它解决了，特此记录一下。。。
+重命名python首先C盘分别建一个python2和python3的文件夹，然后将python2和python3分别安装至对应的文件夹内（安装过程中都要勾选“Add Python.">
+    
 
     <!--Author-->
     
@@ -18,7 +21,7 @@
 
     <!--Open Graph Title-->
     
-        <meta property="og:title" content="iatk&#39;s blog">
+        <meta property="og:title" content="python2与python3在Windows中共存">
     
 
     <!--Open Graph Description-->
@@ -29,7 +32,7 @@
 
     <!--Type page-->
     
-        <meta property="og:type" content="website">
+        <meta property="og:type" content="article">
     
 
     <!--Page Cover-->
@@ -40,7 +43,7 @@
 
     <!-- Title -->
     
-    <title>Archives: 2018/12 - iatk&#39;s blog</title>
+    <title>python2与python3在Windows中共存 - iatk&#39;s blog</title>
 
     <!-- Bootstrap Core CSS -->
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
@@ -127,9 +130,7 @@
 <div class="container">
 
     <!-- Main Content -->
-    
-
-<div class="row">
+    <div class="row">
     <div class="col-sm-12">
 
         <!--Title and Logo-->
@@ -137,97 +138,53 @@
     <div class="logo">
         <a href="/"><i class="logo-icon fa fa-cube" aria-hidden="true"></i></a>
         
-            <h1 id="main-title" class="title">2018/12</h1>
-        
     </div>
 </header>
 
-        <section class="main archive-container">
+        <section class="main">
             
-                <div class="archive-post">
-    <a href="/2019/03/30/3/">
-        <span class="archive-date">
-            Mar 2019
-        </span>
-        MySQL中的substr函数与PHP中的substr函数
-    </a>
+<div class="post">
+
+    <div class="post-header">
+        <h1 class="title">
+            <a href="/2019/04/13/python2与python3在Windows中共存/">
+                python2与python3在Windows中共存
+            </a>
+        </h1>
+        <div class="post-info">
+            
+                <span class="date">2019-04-13</span>
+            
+            
+            
+        </div>
+    </div>
+
+    <div class="content">
+
+        <!-- Gallery -->
+        
+
+        <!-- Post Content -->
+        <h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>当电脑同时有python2和python3时，经常会出现各种令人抓狂的问题，好在终于把它解决了，特此记录一下。。。</p>
+<h3 id="重命名python"><a href="#重命名python" class="headerlink" title="重命名python"></a>重命名python</h3><p>首先C盘分别建一个python2和python3的文件夹，然后将python2和python3分别安装至对应的文件夹内（安装过程中都要勾选“Add Python.exe to Path“选项，两个版本的python可能描述不太一样，理解就行）。<br>关键的步骤：将python3文件夹内的<code>python.exe</code>和<code>pythonw.exe</code>分别改名为<code>python3.exe</code>和<code>pythonw3.exe</code>，也可以python3不动，修改python2文件夹内的两个exe程序的名字，总之两个python的exe程序不重名即可。在命令行内调用python：输入python会显示python2的版本信息，输入python3会显示python3的版本信息，成功~~</p>
+<h3 id="重新安装pip"><a href="#重新安装pip" class="headerlink" title="重新安装pip"></a>重新安装pip</h3><p>还有一个pip的问题同样令人头痛，解决办法：重新安装两个版本的pip。<br>在CMD命令框内输入命令：<br><code>python3-m pip install --upgrade pip --force-reinstall</code>，显示Successfully installed pip-19.0.3<br><code>python2-m pip install --upgrade pip --force-reinstall</code>，显示Successfully installed pip-19.0.3<br>现在通过pip2 -V 和 pip3 -V 查看两个版本的pip信息，以后只需运行pip2install XXX和pip3 install XXX即可安装各自的python包。<br>当然如果不想麻烦也可以使用Anaconda来解决环境问题，不过在我的电脑上启动实在太慢了索性放弃，最后感谢大佬的博客：<a href="https://www.cnblogs.com/thunderLL/p/6643022.html" target="_blank" rel="noopener">https://www.cnblogs.com/thunderLL/p/6643022.html</a></p>
+
+    </div>
+
+    
+
+    
+
+    <!-- Comments -->
+    
+
 </div>
-            
-                <div class="archive-post">
-    <a href="/2019/04/10/4/">
-        <span class="archive-date">
-            Apr 2019
-        </span>
-        apt-get remove与apt-get purge
-    </a>
-</div>
-            
-                <div class="archive-post">
-    <a href="/2019/04/10/CMD常用命令/">
-        <span class="archive-date">
-            Apr 2019
-        </span>
-        CMD常用命令
-    </a>
-</div>
-            
-                <div class="archive-post">
-    <a href="/2019/04/13/python2与python3在Windows中共存/">
-        <span class="archive-date">
-            Apr 2019
-        </span>
-        python2与python3在Windows中共存
-    </a>
-</div>
-            
-                <div class="archive-post">
-    <a href="/2018/12/04/作业三/">
-        <span class="archive-date">
-            Dec 2018
-        </span>
-        Httpd编译安装
-    </a>
-</div>
-            
-                <div class="archive-post">
-    <a href="/2018/12/07/作业四/">
-        <span class="archive-date">
-            Dec 2018
-        </span>
-        在ubuntu上搭建wordpress
-    </a>
-</div>
-            
-                <div class="archive-post">
-    <a href="/2019/04/27/图片马制作/">
-        <span class="archive-date">
-            Apr 2019
-        </span>
-        图片马制作的几种方式
-    </a>
-</div>
-            
-                <div class="archive-post">
-    <a href="/2019/04/27/解析漏洞/">
-        <span class="archive-date">
-            Apr 2019
-        </span>
-        解析漏洞
-    </a>
-</div>
-            
-                <div class="archive-post">
-    <a href="/2019/04/12/SQL注入/">
-        <span class="archive-date">
-            Apr 2019
-        </span>
-        SQL注入
-    </a>
-</div>
-            
         </section>
+
     </div>
 </div>
+
 
 </div>
 

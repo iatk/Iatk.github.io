@@ -10,6 +10,8 @@
 
     <!--Description-->
     
+        <meta name="description" content="一MySQL–substr()    MySQL中的substr()函数是用来截取数据库某一列字段中的一部分    常用方式是：    substr(str,pos);    就是从pos开始的位置，一直截取到最后。    substr(str,pos,len);    这种表示的意思是从pos开始">
+    
 
     <!--Author-->
     
@@ -18,7 +20,7 @@
 
     <!--Open Graph Title-->
     
-        <meta property="og:title" content="iatk&#39;s blog">
+        <meta property="og:title" content="MySQL中的substr函数与PHP中的substr函数">
     
 
     <!--Open Graph Description-->
@@ -29,7 +31,7 @@
 
     <!--Type page-->
     
-        <meta property="og:type" content="website">
+        <meta property="og:type" content="article">
     
 
     <!--Page Cover-->
@@ -40,7 +42,7 @@
 
     <!-- Title -->
     
-    <title>Archives: 2018/12 - iatk&#39;s blog</title>
+    <title>MySQL中的substr函数与PHP中的substr函数 - iatk&#39;s blog</title>
 
     <!-- Bootstrap Core CSS -->
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
@@ -127,9 +129,7 @@
 <div class="container">
 
     <!-- Main Content -->
-    
-
-<div class="row">
+    <div class="row">
     <div class="col-sm-12">
 
         <!--Title and Logo-->
@@ -137,97 +137,52 @@
     <div class="logo">
         <a href="/"><i class="logo-icon fa fa-cube" aria-hidden="true"></i></a>
         
-            <h1 id="main-title" class="title">2018/12</h1>
-        
     </div>
 </header>
 
-        <section class="main archive-container">
+        <section class="main">
             
-                <div class="archive-post">
-    <a href="/2019/03/30/3/">
-        <span class="archive-date">
-            Mar 2019
-        </span>
-        MySQL中的substr函数与PHP中的substr函数
-    </a>
+<div class="post">
+
+    <div class="post-header">
+        <h1 class="title">
+            <a href="/2019/03/30/3/">
+                MySQL中的substr函数与PHP中的substr函数
+            </a>
+        </h1>
+        <div class="post-info">
+            
+                <span class="date">2019-03-30</span>
+            
+            
+            
+        </div>
+    </div>
+
+    <div class="content">
+
+        <!-- Gallery -->
+        
+
+        <!-- Post Content -->
+        <h3 id="一"><a href="#一" class="headerlink" title="一"></a>一</h3><p><strong>MySQL–substr()</strong><br>    MySQL中的substr()函数是用来截取数据库某一列字段中的一部分<br>    常用方式是：<br>    <code>substr(str,pos);</code><br>    就是从pos开始的位置，一直截取到最后。<br>    <code>substr(str,pos,len);</code><br>    这种表示的意思是从pos开始的位置，截取len个字符（空白也算字符）。<br>    需要注意的是：如果pos为1（而不是0），表示从第一个开始。因为数据库的记录都是从1开始而没有从0开始<br>    博文原地址：<a href="https://www.cnblogs.com/quietwalk/p/6478900.html" target="_blank" rel="noopener">https://www.cnblogs.com/quietwalk/p/6478900.html</a></p>
+<h3 id="二"><a href="#二" class="headerlink" title="二"></a>二</h3><p><strong>PHPsubstr()</strong><br><code>substr(string,start,length)</code><br>    参数：<br>    1、string即你要截取的字符串<br>    2、start即要截取的开始位置（0表示从前往后数第一个字符开始，负数表示从后往前数）<br>        举个栗子：length=3，表示截取三个长度；length=-2，即为去掉末尾的两个字符<br>    示例：<br>    A     <code>echo substr(&quot;hello world&quot;,-10,-2);</code><br>        输出： ello wor<br>        解释：-10表示从前往后的第十个字符开始截取，即从字母e开始截取(空格也算字符)；<br>                  -2表示去掉末尾两个字符即去掉’ld’；<br>    B     <code>echo substr(&quot;hello world&quot;,6,6);</code><br>        输出：  world<br>        解释：6表示从第七个字符开始截取(大白话就是从头开始数六个字符然后截取)；<br>              6表示截取6个长度；<br>  最后一句话解释substr函数用法：<br>        <code>&lt;?php echo substr(&quot;Hello world!&quot;,6); 输出world! ,只有两个参数时，第一个参数表示字符串，第二个参数表示，从第6个开始，后面的全部截取?&gt;</code><br>         <code>&lt;?php echo substr(&quot;Hello world!&quot;,6,4); 输出worl，有三个参数时，第二个参数表示起始位置，第三个参数为一共截取的长度?&gt;</code><br>           博文原地址：<a href="https://www.jb51.net/article/128898.htm" target="_blank" rel="noopener">https://www.jb51.net/article/128898.htm</a></p>
+
+    </div>
+
+    
+
+    
+
+    <!-- Comments -->
+    
+
 </div>
-            
-                <div class="archive-post">
-    <a href="/2019/04/10/4/">
-        <span class="archive-date">
-            Apr 2019
-        </span>
-        apt-get remove与apt-get purge
-    </a>
-</div>
-            
-                <div class="archive-post">
-    <a href="/2019/04/10/CMD常用命令/">
-        <span class="archive-date">
-            Apr 2019
-        </span>
-        CMD常用命令
-    </a>
-</div>
-            
-                <div class="archive-post">
-    <a href="/2019/04/13/python2与python3在Windows中共存/">
-        <span class="archive-date">
-            Apr 2019
-        </span>
-        python2与python3在Windows中共存
-    </a>
-</div>
-            
-                <div class="archive-post">
-    <a href="/2018/12/04/作业三/">
-        <span class="archive-date">
-            Dec 2018
-        </span>
-        Httpd编译安装
-    </a>
-</div>
-            
-                <div class="archive-post">
-    <a href="/2018/12/07/作业四/">
-        <span class="archive-date">
-            Dec 2018
-        </span>
-        在ubuntu上搭建wordpress
-    </a>
-</div>
-            
-                <div class="archive-post">
-    <a href="/2019/04/27/图片马制作/">
-        <span class="archive-date">
-            Apr 2019
-        </span>
-        图片马制作的几种方式
-    </a>
-</div>
-            
-                <div class="archive-post">
-    <a href="/2019/04/27/解析漏洞/">
-        <span class="archive-date">
-            Apr 2019
-        </span>
-        解析漏洞
-    </a>
-</div>
-            
-                <div class="archive-post">
-    <a href="/2019/04/12/SQL注入/">
-        <span class="archive-date">
-            Apr 2019
-        </span>
-        SQL注入
-    </a>
-</div>
-            
         </section>
+
     </div>
 </div>
+
 
 </div>
 
